@@ -27,5 +27,7 @@ add_executable(a1-program ${SRC_FILES} )
 #replace [os] with:
 #   win (Windows users)
 #   ubuntu (Ubuntu/Linux users)
-#   mac (Mac OS users)
+#   mac-x86-64-clang (Mac OS users with an Intel CPU and using CLang as compiler)
+#   mac-arm64-clang (Mac OS users with an M1/M2 CPU and using CLang as compiler)
+#   mac-arm64-gcc (Mac OS users with an M1/M2 CPU and using GCC as compiler)
 target_link_libraries(a1-program "${PROJECT_SOURCE_DIR}/lib/libalgos-[os].a")
